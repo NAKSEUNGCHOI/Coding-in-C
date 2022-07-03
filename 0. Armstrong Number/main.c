@@ -3,6 +3,7 @@
 #include <math.h>
 #include <stdbool.h>
 
+// Error fixing
 bool is_armstrong_number(int candidate);
 int digit(int candidate);
 
