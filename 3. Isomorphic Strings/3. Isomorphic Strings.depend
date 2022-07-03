@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1656840472 source:c:\users\chlsk\onedrive\desktop\code blocks\3. isomorphic strings\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+
