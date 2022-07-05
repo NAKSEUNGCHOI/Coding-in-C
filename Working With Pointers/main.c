@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void Increment(int *p);
+
 int main(){
     int a = 1025;
     int *p;
@@ -61,14 +63,35 @@ int main(){
     printf("*ptr2 = %d\n", *ptr2);
     printf("*ptr2+1 = %d\n", *ptr2+1);
     printf("**ptr2+1 = %d\n", **ptr2+1);
+    printf("------------------------------------------------------------\n");
+    printf("------------------------------------------------------------\n");
+    int x = 0;
+    x = 10;
+    Increment(&x);
+    printf("x = %d\n", x);
+    printf("You have to pass the address of x.");
+    printf("------------------------------------------------------------\n");
+    printf("------------------------------------------------------------\n");
+    int b[] = {2, 4, 5, 8, 1};
+    for(int i = 0; i < sizeof(b)/sizeof(int); i++){
+        printf("%d ", b[i]);
+    }
+    printf("\n");
+    printf("b = %d\n", b);      // address of b[0]
+    printf("&b[0] = %d\n", &b[0]);
+    printf("b+1 = %d\n", b+1);  // the next address b[1].
+    printf("*b = %d\n", *b);
+    printf("b[0] = %d\n", b[0]);
+    printf("In order to print out the element at index i,\n");
+    printf("Address - &b[i] or b+i\n");
+    printf("Value - b[i] or *(b+i)\n");
+    int *pointer = b;
+    printf("*pointer = %d\n", *pointer);
+    // b++ would not work if b has been assigned to a pointer.
+    // Instead, p++ works.
+    printf("%d", *(pointer+1));
 
-
-
-
-
-
-
-
-
-
+}
+void Increment(int *p){
+    *p = *p + 1;
 }
