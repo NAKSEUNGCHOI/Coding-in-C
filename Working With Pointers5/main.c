@@ -2,6 +2,9 @@
  *  main.c
  *  @date July-05-2022
  *  @brief practice using qsort and function pointer.
+ *  qsort takes four parameters: an array that needs to be sorted, size of the array, size of each byte and compare function.
+ *  compare function has to look something like present below.
+ *  function arguments must be const void pointer and typecast it as they are used in the function.
  */
 #include <stdio.h>
 #include <stdlib.h>
