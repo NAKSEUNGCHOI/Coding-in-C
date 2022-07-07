@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1657160251 source:c:\users\chlsk\onedrive\desktop\code blocks\working with pointers6\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
